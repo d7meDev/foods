@@ -136,15 +136,43 @@ body{
     cursor: pointer;
 
 }
+.intro .btn-show:hover,.intro .btn-show:active{
+    
+    transform: scale(1.05);
+
+}
 
 .intro-container img{
 
     width: 85%;
 }
 
+.nav-large{
+    display: none;
+}
 
 @media screen and (min-width:769px) {
-    
+
+    .btn-drop-menu,.drop-menu{
+        display: none;
+    }
+     
+    .nav-large{
+        display: flex;
+        column-gap: 2vw;
+        
+    }
+    .nav-large a{
+        font-size: clamp(1rem,2vw,2rem);
+        color: var(--secondary-color);
+    }
+    .nav-large a:hover{
+        color:var(--primary-color);
+        text-decoration: underline var(--secondary-color);
+        text-underline-offset: 10px;
+    }
+   
+
     .intro-container{
         flex-direction: row;
         align-items: center;
