@@ -4,7 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI' , Arial;
 }
 :root {
 
@@ -16,7 +16,7 @@
 
 body{
     background-color: var(--background-color);
-    
+  
     
 }
 
@@ -25,7 +25,7 @@ body{
     position: sticky;
     top: 0px;
     left: 0px;
-    margin-bottom: 20vh;
+    margin-bottom: 2vh;
     background-color: var(--background-color);
 }
 
@@ -71,7 +71,7 @@ body{
 
 
 .drop-menu{
-    
+    position: absolute;
     animation: enter 0.5s ease-in-out;
     background-color: rgb(48,44,68);
     padding: 2vw;
@@ -81,6 +81,7 @@ body{
     align-items: center;
     row-gap: 5vw;
     font-size: clamp(1.2rem,5vw,7rem);
+    width: 100%;
 }
 
 .hide{
@@ -142,3 +143,41 @@ body{
 }
 
 
+@media screen and (min-width:769px) {
+    
+    .intro-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5vw;
+        
+        
+    }
+
+    .intro-container .intro{
+  
+        align-items: start;
+    }
+
+    .intro .intro-title{
+        color: var(--secondary-color);
+        font-size: clamp(1rem,4vw,6rem);
+        text-align: left;
+    }
+
+
+.intro .btn-show{
+    
+    font-size: clamp(1rem,1.5vw,4rem);
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    
+
+}
+    
+
+    .intro-container img{
+
+        width: 35%;
+    }
+}
