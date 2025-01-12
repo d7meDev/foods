@@ -1,26 +1,27 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Segoe UI' , Arial;
+    font-family: 'Segoe UI', Arial;
 }
+
 :root {
 
-    --primary-color: rgb(255, 166, 0);
-    --background-color: rgb(24,20,36);
+    --primary-color: rgb(214, 139, 0);
+    --background-color: rgb(24, 20, 36);
     --secondary-color: rgb(255, 255, 255);
-    
-  }
 
-body{
-    background-color: var(--background-color);
-  
-    
 }
 
-.sticky-nav{
+body {
+    background-color: var(--background-color);
+
+
+}
+
+.sticky-nav {
     z-index: 1;
     position: sticky;
     top: 0px;
@@ -29,77 +30,77 @@ body{
     background-color: var(--background-color);
 }
 
-.navbar{
+.navbar {
 
-   
-   
-    
-   
+
+
+
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1vw 2vw;
-    
+
 
 }
 
-.navbar .logo{
+.navbar .logo {
     z-index: 1;
     color: var(--primary-color);
-    font-size: clamp(2.5rem,8vw,4rem);
+    font-size: clamp(2.5rem, 8vw, 4rem);
 }
 
-.navbar .btn-drop-menu{
+.navbar .btn-drop-menu {
 
-    
+
     z-index: 1;
     background-color: transparent;
     border: none;
-    font-size: clamp(3rem,8vw,4rem);
+    font-size: clamp(3rem, 8vw, 4rem);
     color: var(--secondary-color);
     cursor: pointer;
 
 }
 
-.navbar .btn-drop-menu:active{
+.navbar .btn-drop-menu:active {
 
-    
+
     color: var(--primary-color);
-    
+
 
 }
 
 
-.drop-menu{
+.drop-menu {
     position: absolute;
     animation: enter 0.5s ease-in-out;
-    background-color: rgb(48,44,68);
+    background-color: rgb(48, 44, 68);
     padding: 2vw;
     color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 5vw;
-    font-size: clamp(1.2rem,5vw,7rem);
+    font-size: clamp(1.2rem, 5vw, 7rem);
     width: 100%;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.drop-menu li:active{
+.drop-menu li:active {
     color: var(--primary-color);
 }
 
 @keyframes enter {
-    
-    from{
+
+    from {
         transform: translateY(-100px);
     }
 }
 
-.intro-container{
+.intro-container {
 
     display: flex;
     flex-direction: column;
@@ -107,96 +108,101 @@ body{
     row-gap: 3vh;
 
     margin-bottom: 10vh;
-    
+
 
 }
 
 
-.intro{
+.intro {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 3vh;
-    
+
 }
 
-.intro .intro-title{
+.intro .intro-title {
     color: var(--secondary-color);
-    font-size: clamp(1rem,8vw,3rem);
+    font-size: clamp(1rem, 8vw, 3rem);
     text-align: center;
 }
 
-.intro .btn-show{
-    
-    font-size: clamp(1rem,4vw,2rem);
+.intro .btn-show {
+
+    font-size: clamp(1rem, 4vw, 2rem);
     padding: 2vw 4vw;
-    border-radius: clamp(5px,2vw,20px);
+    border-radius: clamp(5px, 2vw, 20px);
     background-color: rgba(255, 166, 0, 0.699);
     color: var(--secondary-color);
     border: 1px solid rgba(255, 255, 255, 0.103);
     cursor: pointer;
 
 }
-.btn-show:hover,.btn-show:active{
-    
+
+.btn-show:hover,
+.btn-show:active {
+
     transform: scale(1.05);
 
 }
 
-.intro-container img{
+.intro-container img {
 
     width: 85%;
 }
 
-.nav-large{
+.nav-large {
     display: none;
 }
 
 
-.about-container{
+.about-container {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 5vh;
+    margin-bottom: 15vh;
 }
 
-.about-container .about-text{
+.about-container .about-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 1.5vh;
-    
+
 }
-.about-container .about-text h6{
+
+.about-container .about-text h6 {
     text-align: center;
-    font-size: clamp(1rem,1vw,1.5rem);
+    font-size: clamp(1rem, 1vw, 1.5rem);
     color: var(--primary-color);
     font-weight: 500;
-    
-    
+
+
 }
-.about-container .about-text h1{
+
+.about-container .about-text h1 {
 
     text-align: center;
-    font-size: clamp(2rem,3vw,5rem);
+    font-size: clamp(2rem, 3vw, 5rem);
     color: var(--secondary-color);
-    
+
 }
 
-.about-container .about-text p{
+.about-container .about-text p {
 
     text-align: center;
-    font-size: clamp(0.9rem,2vw,3rem);
+    font-size: clamp(0.9rem, 2vw, 3rem);
     color: var(--secondary-color);
     padding: 0 2vw;
     margin-bottom: 1vh;
 }
 
-.btn-show{
-    
-    font-size: clamp(1rem,1.5vw,2rem);
+.btn-show {
+
+    font-size: clamp(1rem, 1.5vw, 2rem);
     padding: 1vw 2vw;
     border-radius: 5px;
     background-color: rgba(255, 166, 0, 0.699);
@@ -206,121 +212,240 @@ body{
 
 }
 
-.about-container img{
+.about-container img {
     width: 85%;
+}
+
+
+.menu-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8vh;
+    margin-bottom: 10vh;
+}
+
+
+.menu-container .menu-header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 2vw;
+    row-gap: 1vh;
+}
+.menu-container .menu-header h4{
+
+    color: var(--primary-color);
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.menu-container .menu-header h1{
+
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 5rem);
+
+}
+
+.menu-container .menu-list{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 7vh;
+}
+
+.menu-container .menu-list .meal-container{
+
+    background-color: rgb(255, 243, 221);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 1.2vw;
+    
+}
+
+
+.menu-container .menu-list .meal-container .meal-header{
+    width: 100%;
+    height: auto;
+    text-align: end;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.menu-container .menu-list .meal-container .meal-header div{
+    background-color: var(--primary-color);
+    padding: 1vw;
+    text-align: center;
+    border-top-right-radius: 1.2vw;
+    border-bottom-left-radius: 1.2vw;
+}
+.menu-container .menu-list .meal-container .meal-header div i{
+    
+    font-size: clamp(2rem,2vw,3rem);
+    color: var(--secondary-color);
+    
+}
+.menu-container .menu-list .meal-container .meal-body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2vw 2vw;
+    row-gap: 1vh;
+    
+}
+.menu-container .menu-list .meal-container .meal-body img{
+    
+    width: 60%;
+    
+}
+.menu-container .menu-list .meal-container .meal-body h2{
+    
+    color: black;
+    font-size: clamp(1.5rem,2vw,2.5rem);
+}
+.menu-container .menu-list .meal-container .meal-body h3{
+    
+    color: black;
+    font-size: clamp(1rem,1vw,1.5rem);
+    font-weight: 400;
+}
+.menu-container .menu-list .meal-container .meal-body h4{
+    
+    color: var(--primary-color);
+    font-size: clamp(1rem,1vw,1.5rem);
+    font-weight: 400;
 }
 
 
 
 @media screen and (min-width:768px) {
 
-    .btn-drop-menu,.drop-menu{
+    .btn-drop-menu,
+    .drop-menu {
         display: none;
     }
-     
-    .nav-large{
+
+    .nav-large {
         display: flex;
         column-gap: 2vw;
-        
+
     }
-    .nav-large a{
-        font-size: clamp(1rem,2vw,2rem);
+
+    .nav-large a {
+        font-size: clamp(1rem, 2vw, 2rem);
         color: var(--secondary-color);
     }
-    .nav-large a:hover{
-        color:var(--primary-color);
+
+    .nav-large a:hover {
+        color: var(--primary-color);
         text-decoration: underline var(--secondary-color);
         text-underline-offset: 10px;
     }
-   
 
-    .intro-container{
+
+    .intro-container {
         flex-direction: row;
         align-items: center;
         justify-content: center;
         column-gap: 5vw;
-        
-        
+
+
     }
 
-    .intro-container .intro{
-  
+    .intro-container .intro {
+
         align-items: start;
     }
 
-    .intro .intro-title{
+    .intro .intro-title {
         color: var(--secondary-color);
-        font-size: clamp(1rem,4vw,6rem);
+        font-size: clamp(1rem, 4vw, 6rem);
         text-align: left;
     }
 
 
-.intro .btn-show{
-    
-    font-size: clamp(1rem,1.5vw,4rem);
-    padding: 0.5vw 1vw;
-    border-radius: 0.5vw;
-    
+    .intro .btn-show {
 
-}
-    
+        font-size: clamp(1rem, 1.5vw, 4rem);
+        padding: 0.5vw 1vw;
+        border-radius: 0.5vw;
 
-    .intro-container img{
+
+    }
+
+
+    .intro-container img {
 
         width: 35%;
     }
-       
-    .about-container{
 
-      
+    .about-container {
+
+
         flex-direction: row-reverse;
         justify-content: center;
         column-gap: 5vw;
-        
-       
-        
+
+
+
     }
 
-    .about-container .about-text{
-        align-items: center; 
+    .about-container .about-text {
+        align-items: center;
         width: 50%;
         row-gap: 2vh;
-        
-        
-        
+
+
+
     }
 
-    .about-container .about-text h6{
-        
+    .about-container .about-text h6 {
+
         width: 60%;
         text-align: left;
-        font-size: clamp(0.7rem,1vw,1.5rem);
-        
-        
-        
+        font-size: clamp(0.7rem, 1vw, 1.5rem);
+
+
+
     }
-    .about-container .about-text h1{
-       
+
+    .about-container .about-text h1 {
+
         width: 60%;
         text-align: left;
-        font-size: clamp(1rem,2vw,5rem);
+        font-size: clamp(1rem, 2vw, 5rem);
         color: var(--secondary-color);
-        
+
     }
-    
-    .about-container .about-text p{
-       
-       
+
+    .about-container .about-text p {
+
+
         width: 60%;
         padding: 0px;
         text-align: left;
-        font-size: clamp(0.9rem,1vw,2rem);
+        font-size: clamp(0.9rem, 1vw, 2rem);
         margin-bottom: 1vh;
     }
 
-    .about-container .about-text .btn-show{
-       
-        font-size: clamp(1rem,1.5vw,2rem);
+    .about-container .about-text .btn-show-container {
+
+        width: 60.5%;
+    }
+
+    .about-container .about-text .btn-show-container .btn-show {
+
+        font-size: clamp(0.5rem, 1vw, 2rem);
         padding: 1vw 2vw;
         border-radius: 5px;
         background-color: rgba(255, 166, 0, 0.699);
@@ -328,15 +453,26 @@ body{
         border: 1px solid rgba(255, 255, 255, 0.103);
         cursor: pointer;
 
-        
-    
+
+
+
     }
 
-    .about-container img{
-        
+    .about-container img {
+
         width: 35%;
     }
 
+    .menu-container .menu-list{
 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        
+    
+        column-gap: 2vw;
+        padding: 0 10vw;
+    }
 
 }
