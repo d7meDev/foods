@@ -223,7 +223,7 @@ body {
     flex-direction: column;
     align-items: center;
     row-gap: 8vh;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
 }
 
 
@@ -240,13 +240,11 @@ body {
 
     color: var(--primary-color);
     font-size: clamp(1rem, 1vw, 1.5rem);
-    color: var(--primary-color);
     font-weight: 500;
 }
 .menu-container .menu-header h1{
 
     color: var(--secondary-color);
-    text-align: center;
     font-size: clamp(2rem, 3vw, 5rem);
 
 }
@@ -326,6 +324,74 @@ body {
     font-weight: 400;
 }
 
+.services-container{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+    margin-bottom: 15vh;
+}
+.services-container .services-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 1vh;
+}
+.services-container .services-header h4{
+
+    color: var(--primary-color);
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    font-weight: 500;
+}
+.services-container .services-header h1{
+
+    color: var(--secondary-color);
+    font-size: clamp(2rem, 3vw, 5rem);
+}
+.services-container .services-list{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15vh;
+}
+.services-container .services-list .service{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 1vh;
+}
+
+.services-container .services-list .service img{
+
+    height: 6rem;
+}
+.services-container .services-list .service h3{
+
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    
+}
+.services-container .services-list .service p{
+
+    color: var(--secondary-color);
+    font-size: clamp(1rem,0.5vw,1.5rem);
+    
+  
+    
+    
+}
+.services-container .services-list .service .ps{
+
+   
+   width: 70%;
+   
+    
+    
+}
 
 
 @media screen and (min-width:768px) {
@@ -473,6 +539,16 @@ body {
     
         column-gap: 2vw;
         padding: 0 10vw;
+    }
+
+
+    .services-container .services-list{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+       
     }
 
 }
