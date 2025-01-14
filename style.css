@@ -394,6 +394,43 @@ body {
 }
 
 
+.ad-container{
+
+    display: flex;
+    justify-content: center;
+    padding: 10vw;
+    margin-bottom: 15vh;
+}
+.ad-container .ad{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vw;
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+
+    padding: 7vw;
+    border-radius: 1vw;
+    
+}
+
+.ad-container h1{
+
+    color: rgb(59, 59, 59);
+    font-size: clamp(1rem,2.5vw,3rem);
+   
+    
+}
+.ad-container .btn-show{
+
+    
+    font-size: clamp(1rem,1.5vw,2rem);
+    background-color: rgb(255, 166, 0);
+    
+}
+
+
 @media screen and (min-width:768px) {
 
     .btn-drop-menu,
@@ -549,6 +586,21 @@ body {
         justify-content: center;
         
        
+    }
+
+    .ad-container .ad{
+
+        
+    
+        padding: 7vw 20vw;
+    
+    }
+
+    .ad-container .btn-show{
+
+    
+        
+        border-radius: 10px;
     }
 
 }
