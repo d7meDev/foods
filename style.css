@@ -17,8 +17,8 @@
 
 body {
     background-color: var(--background-color);
-
-
+    scroll-behavior: smooth;
+     
 }
 
 .sticky-nav {
@@ -500,24 +500,32 @@ body {
 }
 .footer-container .pack .ul-contact li{
 
-    background-color: var(--primary-color);
-    padding: 0.5vw 1vw;
-    font-size: clamp(2rem ,2vw,4rem);
+
     border-radius:50%;
     text-align: center;
 }
+
+.footer-container .pack .ul-contact li i{
+
+    background-color: var(--primary-color);
+    font-size: clamp(2rem ,2vw,4rem);
+    border-radius: 50%;
+    padding: 1vw;
+
+}
+
 .footer-container .pack ul li{
 
     cursor: pointer;
     font-size: clamp(1rem,1.3vw,1.5rem);   
 }
-.footer-container .pack ul li:hover[class = ""]{
+.footer-container .pack ul li:hover[class = ""], .footer-container .pack ul li:active[class = ""]{
 
     color: var(--primary-color);
     transform: translateX(0.5vw) scale(1.1);
 }
 
-.footer-container .pack .ul-contact li:hover{
+.footer-container .pack .ul-contact li i:hover,.footer-container .pack .ul-contact li i:active{
 
     background-color: rgba(255, 166, 0, 0.42);
     
