@@ -76,7 +76,6 @@ body {
     animation: enter 0.5s ease-in-out;
     background-color: rgb(48, 44, 68);
     padding: 2vw;
-    color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,8 +88,13 @@ body {
     display: none;
 }
 
-.drop-menu li:active {
+.drop-menu li a {
+    color: var(--secondary-color);
+    
+}
+.drop-menu li a:active {
     color: var(--primary-color);
+    
 }
 
 @keyframes enter {
