@@ -417,7 +417,7 @@ body {
     align-items: center;
     row-gap: 3vw;
     text-align: center;
-    background-color: rgb(235, 235, 235);
+    background-color:  rgb(255, 243, 220);
 
     padding: 7vw;
     border-radius: 1vw;
@@ -426,7 +426,7 @@ body {
 
 .ad-container h1{
 
-    color: rgb(59, 59, 59);
+    color: rgb(0, 0, 0);
     font-size: clamp(1rem,2.5vw,3rem);
    
     
