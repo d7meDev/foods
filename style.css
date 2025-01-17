@@ -462,7 +462,8 @@ body {
     color: var(--secondary-color);
     font-size: clamp(1rem,1.3vw,1.5rem);
     padding: 0px 1vw;
-    text-decoration: 3px underline;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
     text-decoration-color: var(--primary-color);
     text-underline-offset: 10px;
 
