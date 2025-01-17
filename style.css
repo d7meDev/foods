@@ -96,6 +96,10 @@ body {
     color: var(--primary-color);
     
 }
+.drop-menu li a:hover {
+    color: var(--primary-color);
+    
+}
 
 @keyframes enter {
 
